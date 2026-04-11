@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPY GLASS HOUSE | Secure Admin</title>
+  <meta name="description" content="Secure admin panel for SPY GLASS HOUSE.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/admin.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="./index.html">
+        <span class="logo-main">SPY GLASS HOUSE</span>
+        <span class="logo-sub">Secure Admin Panel</span>
+      </a>
+      <div class="top-actions">
+        <span id="adminUserChip" class="user-chip">Not Signed In</span>
+        <button id="logoutBtn" class="btn btn-outline" type="button" hidden>Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="configWarning" class="banner warning" hidden></section>
+
+    <section id="loginCard" class="card auth-card">
+      <h1>Admin Login</h1>
+      <p>Use admin email and password to manage products, orders, and visitor history.</p>
+      <form id="adminLoginForm" class="form-grid" style="margin-top:12px;">
+        <label>
+          Admin Email
+          <input id="adminEmail" type="email" required>
+        </label>
+        <label>
+          Password
+          <input id="adminPassword" type="password" required>
+        </label>
+        <div class="span-2">
+          <button id="loginBtn" class="btn btn-primary" type="submit">Login</button>
+        </div>
+      </form>
+      <p class="small">Allowed admin email: <strong id="allowedEmailLabel">mmpptt9@gmail.com</strong></p>
+    </section>
+
+    <section id="unauthorizedCard" class="card auth-card" hidden>
+      <h2>Access Denied</h2>
+      <p>Invalid admin credentials or token expired.</p>
+      <button id="switchAccountBtn" class="btn btn-outline" type="button">Back To Login</button>
+    </section>
+
+    <section id="adminApp" hidden>
+      <section class="stats-grid">
+        <article class="stat-card">
+          <p>Products</p>
+          <h3 id="statProducts">0</h3>
+        </article>
+        <article class="stat-card">
+          <p>Orders</p>
+          <h3 id="statOrders">0</h3>
+        </article>
+        <article class="stat-card">
+          <p>Total Visits</p>
+          <h3 id="statVisits">0</h3>
+        </article>
+        <article class="stat-card">
+          <p>Unique Sessions</p>
+          <h3 id="statUniqueSessions">0</h3>
+        </article>
+        <article class="stat-card">
+          <p>Logged Users</p>
+          <h3 id="statLoggedUsers">0</h3>
+        </article>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>Products</h2>
+          <div class="actions">
+            <button id="seedBtn" class="btn btn-outline" type="button">Seed Starter Products</button>
+            <button id="clearFormBtn" class="btn btn-outline" type="button">Clear Form</button>
+          </div>
+        </div>
+
+        <form id="productForm" class="form-grid">
+          <input id="productId" type="hidden">
+          <label>
+            Product Name
+            <input id="productName" type="text" required>
+          </label>
+          <label>
+            Category
+            <input id="productCategory" type="text" placeholder="Designer Mirror" required>
+          </label>
+          <label>
+            Type Key
+            <input id="productType" type="text" placeholder="designer / led / decor" required>
+          </label>
+          <label>
+            Price (INR)
+            <input id="productPrice" type="number" min="1" required>
+          </label>
+          <label>
+            Badge
+            <input id="productBadge" type="text" placeholder="Best Seller">
+          </label>
+          <label>
+            Active
+            <select id="productIsActive">
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+          </label>
+          <label class="span-2">
+            Image URL
+            <input id="productImage" type="url" required>
+          </label>
+          <label class="span-2">
+            Description
+            <textarea id="productDescription" rows="3" required></textarea>
+          </label>
+          <div class="span-2">
+            <button class="btn btn-primary" type="submit">Save Product</button>
+          </div>
+        </form>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="productRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>Orders</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Placed</th>
+              </tr>
+            </thead>
+            <tbody id="orderRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>Visitor History</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Email</th>
+                <th>Session</th>
+                <th>Location</th>
+                <th>Event</th>
+                <th>Page</th>
+              </tr>
+            </thead>
+            <tbody id="visitRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>Enquiries</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Need</th>
+                <th>City</th>
+              </tr>
+            </thead>
+            <tbody id="enquiryRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="./assets/app-config.js"></script>
+  <script type="module" src="./assets/admin.js"></script>
+</body>
+</html>

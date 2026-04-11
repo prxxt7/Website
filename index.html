@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <script>
+    (function () {
+      var viewport = document.querySelector('meta[name="viewport"]');
+      if (viewport) {
+        viewport.setAttribute("content", "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover");
+      }
+    })();
+  </script>
+  <title>SPY GLASS HOUSE | Premium Mirrors and Lighting</title>
+  <meta name="description" content="SPY GLASS HOUSE offers premium mirrors and designer lighting for luxury spaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css?v=20260410m3">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="#top">
+        <span class="logo-main">SPY GLASS HOUSE</span>
+        <span class="logo-sub">Design Mirrors and Lighting</span>
+      </a>
+
+      <ul class="menu">
+        <li><a href="#products">Collection</a></li>
+        <li><a href="#craft">Craft</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="topbar-actions">
+        <span id="userChip" class="user-chip">Guest</span>
+        <button id="authBtn" class="btn btn-outline" type="button">Login with Google</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <p class="hero-kicker">Bespoke elegance for modern interiors</p>
+          <h1>Reflect <em>Luxury</em></h1>
+          <p class="hero-copy">
+            SPY GLASS HOUSE delivers premium mirrors and design lighting for homes, salons, hotels, and commercial spaces.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Shop Collection</a>
+            <a class="btn btn-outline" href="#contact">Custom Requirement</a>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="hero-note">
+            <h3>Studio Grade Detailing</h3>
+            <p>Precision finish, elegant proportions, and reliable quality in every mirror installation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ribbon">
+        <div class="ribbon-track">
+          PREMIUM MIRRORS - DESIGN LIGHTING - LED VANITY COLLECTION - CUSTOM SIZES - PAN INDIA DELIVERY - WHATSAPP SUPPORT - PREMIUM MIRRORS - DESIGN LIGHTING - LED VANITY COLLECTION - CUSTOM SIZES - PAN INDIA DELIVERY -
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag">Collection</p>
+          <h2>Our Signature <em>Range</em></h2>
+          <p>Browse by category, compare products, and place orders online.</p>
+          <div class="gold-line"></div>
+        </header>
+
+        <div id="statusBanner" class="status-banner" hidden></div>
+
+        <div class="controls reveal">
+          <input id="searchInput" class="search" type="search" placeholder="Search by name, style, or category">
+          <div id="filterGroup" class="filters"></div>
+        </div>
+
+        <div id="productGrid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="craft">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-tag">Our Process</p>
+          <h2>Built With <em>Precision</em></h2>
+          <p>From design to dispatch, each order follows strict quality standards.</p>
+          <div class="gold-line"></div>
+        </header>
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <p class="step">Step 01</p>
+            <h3>Design Consultation</h3>
+            <p>We guide style, dimensions, and mirror category based on your interior theme.</p>
+          </article>
+          <article class="feature reveal">
+            <p class="step">Step 02</p>
+            <h3>Material Selection</h3>
+            <p>Premium glass, tested accessories, and long-lasting frame finish.</p>
+          </article>
+          <article class="feature reveal">
+            <p class="step">Step 03</p>
+            <h3>Crafting and Finish</h3>
+            <p>Precision edge polishing and final quality check before dispatch.</p>
+          </article>
+          <article class="feature reveal">
+            <p class="step">Step 04</p>
+            <h3>Delivery Support</h3>
+            <p>Safe packing and responsive support for smooth product delivery.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <article class="contact-card reveal">
+          <p class="section-tag">Contact</p>
+          <h3>Order Help and Custom Quote</h3>
+          <p>Share your requirement and we will help choose the best mirror or lighting model for your space.</p>
+          <div class="contact-list">
+            <div><strong>Call:</strong> +91 99999 99999</div>
+            <div><strong>WhatsApp:</strong> +91 99999 99999</div>
+            <div><strong>Email:</strong> spyglasshouse@example.com</div>
+            <div><strong>Hours:</strong> 10:00 AM to 8:00 PM (Mon-Sat)</div>
+          </div>
+        </article>
+
+        <article class="contact-card reveal">
+          <form id="contactForm" class="form">
+            <div class="row">
+              <input id="cName" class="field" type="text" placeholder="Full Name">
+              <input id="cPhone" class="field" type="tel" placeholder="Phone Number">
+            </div>
+            <div class="row">
+              <input id="cEmail" class="field" type="email" placeholder="Email (optional)">
+            </div>
+            <div class="row">
+              <input id="cCity" class="field" type="text" placeholder="City">
+              <select id="cNeed" class="field">
+                <option value="">Need Type</option>
+                <option>Designer Mirror</option>
+                <option>LED Mirror</option>
+                <option>Dressing Mirror</option>
+                <option>Wall Mirror</option>
+                <option>Decor Lighting</option>
+                <option>Custom Project</option>
+              </select>
+            </div>
+            <textarea id="cMsg" class="field" placeholder="Mention size, quantity, and style"></textarea>
+            <button class="btn btn-primary" type="submit">Send Enquiry</button>
+            <p class="note">Enquiry opens directly in WhatsApp for fast response.</p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="copy">SPY GLASS HOUSE | Premium Mirrors and Lighting</p>
+      <div class="links">
+        <a href="#products">Collection</a>
+        <a href="#craft">Craft</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+    <span>WA</span>
+  </a>
+
+  <div id="modalWrap" class="modal-wrap">
+    <div class="modal">
+      <button id="closeModal" class="close" type="button">x</button>
+      <div id="modalFormBlock">
+        <p id="modalCategory" class="m-tag">Category</p>
+        <h3 id="modalName" class="m-name">Product Name</h3>
+        <p id="modalPrice" class="m-price">Rs 0</p>
+        <form id="orderForm" class="m-form">
+          <div class="row">
+            <input id="oName" class="field" type="text" placeholder="Full Name" required>
+            <input id="oPhone" class="field" type="tel" placeholder="Phone Number" required>
+          </div>
+          <div class="row">
+            <input id="oEmail" class="field" type="email" placeholder="Email from Google Login" readonly required>
+          </div>
+          <div class="row">
+            <input id="oQty" class="field" type="number" min="1" value="1" required>
+            <select id="oPay" class="field">
+              <option value="UPI">UPI</option>
+              <option value="Card">Card</option>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+            </select>
+          </div>
+          <div class="row">
+            <input id="oCity" class="field" type="text" placeholder="City" required>
+            <input id="oPincode" class="field" type="text" placeholder="Pincode" required>
+          </div>
+          <textarea id="oAddress" class="field" placeholder="Delivery address with landmark" required></textarea>
+          <button class="btn btn-primary" type="submit">Confirm Order</button>
+          <p class="note">Login with Google is required before placing an order.</p>
+        </form>
+      </div>
+
+      <div id="okBlock" class="ok">
+        <h4>Order Saved</h4>
+        <p>Your order is saved. Click below and send details on WhatsApp for fastest confirmation.</p>
+        <div style="margin-top:12px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+          <a id="sendOrderWa" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Send on WhatsApp</a>
+          <button id="closeOk" class="btn btn-outline" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="./assets/app-config.js?v=20260410m3"></script>
+  <script type="module" src="./assets/site.js?v=20260410m3"></script>
+</body>
+</html>

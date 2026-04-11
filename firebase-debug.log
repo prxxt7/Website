@@ -1,0 +1,787 @@
+[debug] [2026-04-10T11:53:24.592Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T11:53:24.613Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T11:53:24.621Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2026-04-10T11:53:24.622Z] CLI Version:   15.13.0
+[debug] [2026-04-10T11:53:24.622Z] Platform:      win32
+[debug] [2026-04-10T11:53:24.623Z] Node Version:  v24.14.1
+[debug] [2026-04-10T11:53:24.623Z] Time:          Fri Apr 10 2026 17:23:24 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T11:53:24.623Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T11:53:24.629Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-04-10T11:53:24.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T11:53:24.833Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T11:53:24.840Z] Checked if tokens are valid: false, expires at: 1775661590945
+[debug] [2026-04-10T11:53:24.841Z] Checked if tokens are valid: false, expires at: 1775661590945
+[debug] [2026-04-10T11:53:24.842Z] > refreshing access token with scopes: []
+[debug] [2026-04-10T11:53:24.900Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-04-10T11:53:24.900Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-10T11:53:24.599Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login:list
+[debug] [2026-04-10T11:53:24.600Z] CLI Version:   15.13.0
+[debug] [2026-04-10T11:53:24.600Z] Platform:      win32
+[debug] [2026-04-10T11:53:24.601Z] Node Version:  v24.14.1
+[debug] [2026-04-10T11:53:24.601Z] Time:          Fri Apr 10 2026 17:23:24 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T11:53:24.602Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T11:53:24.609Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Logged in as mmpptt9@gmail.com
+[debug] [2026-04-10T11:53:25.185Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-04-10T11:53:25.186Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-10T11:53:25.205Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-04-10T11:53:25.663Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-04-10T11:53:25.664Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-04-10T11:53:25.996Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-04-10T11:53:25.997Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] ┌──────────────────────┬───────────────────────────┬────────────────┬──────────────────────┐
+│ Project Display Name │ Project ID                │ Project Number │ Resource Location ID │
+├──────────────────────┼───────────────────────────┼────────────────┼──────────────────────┤
+│ Spy Glass House      │ spy-glass-house (current) │ 23532303547    │ [Not specified]      │
+└──────────────────────┴───────────────────────────┴────────────────┴──────────────────────┘
+[info] 
+[info] 1 project(s) total.
+[debug] [2026-04-10T11:54:42.382Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T11:54:42.389Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use spy-glass-house
+[debug] [2026-04-10T11:54:42.390Z] CLI Version:   15.13.0
+[debug] [2026-04-10T11:54:42.390Z] Platform:      win32
+[debug] [2026-04-10T11:54:42.390Z] Node Version:  v24.14.1
+[debug] [2026-04-10T11:54:42.391Z] Time:          Fri Apr 10 2026 17:24:42 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T11:54:42.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T11:54:43.016Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T11:54:43.020Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T11:54:43.027Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:43.027Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:43.030Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house [none]
+[debug] [2026-04-10T11:54:44.599Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house 200
+[debug] [2026-04-10T11:54:44.600Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house {"projectNumber":"23532303547","projectId":"spy-glass-house","lifecycleState":"ACTIVE","name":"Spy Glass House ","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-04-08T14:02:32.476Z"}
+[info] Now using project spy-glass-house
+[debug] [2026-04-10T11:54:52.043Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T11:54:52.050Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:disable --project spy-glass-house --force
+[debug] [2026-04-10T11:54:52.051Z] CLI Version:   15.13.0
+[debug] [2026-04-10T11:54:52.051Z] Platform:      win32
+[debug] [2026-04-10T11:54:52.052Z] Node Version:  v24.14.1
+[debug] [2026-04-10T11:54:52.052Z] Time:          Fri Apr 10 2026 17:24:52 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T11:54:52.052Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T11:54:52.667Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T11:54:52.669Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T11:54:52.670Z] [iam] checking project spy-glass-house for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-10T11:54:52.673Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:52.674Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:52.676Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions [none]
+[debug] [2026-04-10T11:54:52.677Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions  x-goog-user-project=spy-glass-house
+[debug] [2026-04-10T11:54:52.679Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T11:54:54.191Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions 200
+[debug] [2026-04-10T11:54:54.192Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T11:54:54.193Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:54.193Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:54.194Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house [none]
+[debug] [2026-04-10T11:54:54.705Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house 200
+[debug] [2026-04-10T11:54:54.705Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house {"projectId":"spy-glass-house","projectNumber":"23532303547","displayName":"Spy Glass House ","name":"projects/spy-glass-house","resources":{"hostingSite":"spy-glass-house"},"state":"ACTIVE","etag":"1_27d5223c-6252-4c30-80ea-24725e376719"}
+[debug] [2026-04-10T11:54:54.706Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:54.706Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:54:54.707Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/spy-glass-house/releases [none]
+[debug] [2026-04-10T11:54:54.707Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/spy-glass-house/releases {"type":"SITE_DISABLE"}
+[debug] [2026-04-10T11:54:55.969Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/spy-glass-house/releases 200
+[debug] [2026-04-10T11:54:55.969Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/spy-glass-house/releases {"name":"sites/spy-glass-house/releases/1775822095740000","type":"SITE_DISABLE","releaseTime":"2026-04-10T11:54:55.740Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  Hosting has been disabled for spy-glass-house. Deploy a new version to re-enable. 
+[debug] [2026-04-10T11:55:03.135Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T11:55:03.142Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project spy-glass-house
+[debug] [2026-04-10T11:55:03.143Z] CLI Version:   15.13.0
+[debug] [2026-04-10T11:55:03.143Z] Platform:      win32
+[debug] [2026-04-10T11:55:03.143Z] Node Version:  v24.14.1
+[debug] [2026-04-10T11:55:03.144Z] Time:          Fri Apr 10 2026 17:25:03 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T11:55:03.144Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T11:55:09.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T11:55:09.840Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T11:55:09.841Z] [iam] checking project spy-glass-house for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-10T11:55:09.845Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:09.847Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:09.850Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions [none]
+[debug] [2026-04-10T11:55:09.850Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions  x-goog-user-project=spy-glass-house
+[debug] [2026-04-10T11:55:09.851Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T11:55:11.402Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions 200
+[debug] [2026-04-10T11:55:11.403Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T11:55:11.405Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:11.405Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:11.406Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house [none]
+[debug] [2026-04-10T11:55:11.871Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house 200
+[debug] [2026-04-10T11:55:11.871Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house {"projectId":"spy-glass-house","projectNumber":"23532303547","displayName":"Spy Glass House ","name":"projects/spy-glass-house","resources":{"hostingSite":"spy-glass-house"},"state":"ACTIVE","etag":"1_27d5223c-6252-4c30-80ea-24725e376719"}
+[info] 
+[info] === Deploying to 'spy-glass-house'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-04-10T11:55:11.884Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:11.884Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:11.884Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions [none]
+[debug] [2026-04-10T11:55:11.884Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-04-10T11:55:13.513Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions 200
+[debug] [2026-04-10T11:55:13.513Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"name":"projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[spy-glass-house]: beginning deploy... 
+[info] i  hosting[spy-glass-house]: found 9 files in public 
+[debug] [2026-04-10T11:55:13.544Z] [hosting] uploading with 200 concurrency
+[debug] [2026-04-10T11:55:13.547Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2026-04-10T11:55:13.569Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:13.569Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:13.573Z] [hosting] hash cache [cHVibGlj] stored for 9 files
+[debug] [2026-04-10T11:55:13.574Z] [hosting][hash queue][FINAL] {"max":20,"min":12,"avg":14.333333333333334,"active":0,"complete":9,"success":9,"errored":0,"retried":0,"total":9,"elapsed":26}
+[debug] [2026-04-10T11:55:13.574Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521:populateFiles [none]
+[debug] [2026-04-10T11:55:13.575Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521:populateFiles {"files":{"/admin.html":"2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a","/assets/site.js":"f3d86908cca13ea451a6842eb9928442701c85e57f6a0dbedd3f47bd162c4c8a","/assets/site.css":"5a860b52937e28ce6333be116bd31793e968c9f3c93cb1ec816f1fb06b64f422","/assets/app-config.js":"78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5","/index.html":"fc048b7a8ef560846c0a5d1d6bccafa78cd6c7daf1fe4775907481e070fb0276","/assets/admin.css":"8adf0e592d3e4bc359c4d7c89362ecac640e771d421aec98a0bd1b4ec198b6ba","/assets/admin.js":"438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3","/assets/shared.js":"d9792c2ffd8be85cd5c3f2c112b4d122b95d65405a1a472222eeeed95d1657c9","/owner-portal-sgh-7842.html":"123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72"}}
+[debug] [2026-04-10T11:55:14.271Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521:populateFiles 200
+[debug] [2026-04-10T11:55:14.271Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521:populateFiles {"uploadRequiredHashes":["438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3","2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a","fc048b7a8ef560846c0a5d1d6bccafa78cd6c7daf1fe4775907481e070fb0276","78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5","f3d86908cca13ea451a6842eb9928442701c85e57f6a0dbedd3f47bd162c4c8a","123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files"}
+[debug] [2026-04-10T11:55:14.273Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.273Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.274Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.274Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.275Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.275Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.276Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.276Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.277Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.277Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.278Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.278Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:14.278Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3 [none]
+[debug] [2026-04-10T11:55:14.279Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3 [stream]
+[debug] [2026-04-10T11:55:14.282Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a [none]
+[debug] [2026-04-10T11:55:14.283Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a [stream]
+[debug] [2026-04-10T11:55:14.286Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/fc048b7a8ef560846c0a5d1d6bccafa78cd6c7daf1fe4775907481e070fb0276 [none]
+[debug] [2026-04-10T11:55:14.286Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/fc048b7a8ef560846c0a5d1d6bccafa78cd6c7daf1fe4775907481e070fb0276 [stream]
+[debug] [2026-04-10T11:55:14.289Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5 [none]
+[debug] [2026-04-10T11:55:14.289Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5 [stream]
+[debug] [2026-04-10T11:55:14.292Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/f3d86908cca13ea451a6842eb9928442701c85e57f6a0dbedd3f47bd162c4c8a [none]
+[debug] [2026-04-10T11:55:14.292Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/f3d86908cca13ea451a6842eb9928442701c85e57f6a0dbedd3f47bd162c4c8a [stream]
+[debug] [2026-04-10T11:55:14.295Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72 [none]
+[debug] [2026-04-10T11:55:14.296Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72 [stream]
+[debug] [2026-04-10T11:55:14.299Z] [hosting][populate queue][FINAL] {"max":709,"min":709,"avg":709,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":730}
+[debug] [2026-04-10T11:55:14.299Z] [hosting] uploads queued: 6
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2026-04-10T11:55:15.942Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72 200
+[debug] [2026-04-10T11:55:15.942Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72 [stream]
+[debug] [2026-04-10T11:55:15.998Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/fc048b7a8ef560846c0a5d1d6bccafa78cd6c7daf1fe4775907481e070fb0276 200
+[debug] [2026-04-10T11:55:15.999Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/fc048b7a8ef560846c0a5d1d6bccafa78cd6c7daf1fe4775907481e070fb0276 [stream]
+[debug] [2026-04-10T11:55:16.049Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a 200
+[debug] [2026-04-10T11:55:16.049Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a [stream]
+[debug] [2026-04-10T11:55:16.129Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/f3d86908cca13ea451a6842eb9928442701c85e57f6a0dbedd3f47bd162c4c8a 200
+[debug] [2026-04-10T11:55:16.129Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/f3d86908cca13ea451a6842eb9928442701c85e57f6a0dbedd3f47bd162c4c8a [stream]
+[debug] [2026-04-10T11:55:16.282Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3 200
+[debug] [2026-04-10T11:55:16.283Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3 [stream]
+[debug] [2026-04-10T11:55:16.612Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5 200
+[debug] [2026-04-10T11:55:16.613Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/fefd68169a80e521/files/78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5 [stream]
+[debug] [2026-04-10T11:55:16.613Z] [hosting][upload queue][FINAL] {"max":2338,"min":1665,"avg":1894.6666666666667,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":2342}
+[info] i  hosting: upload complete 
+[info] +  hosting[spy-glass-house]: file upload complete 
+[debug] [2026-04-10T11:55:16.614Z] [hosting] deploy completed after 3096ms
+[debug] [2026-04-10T11:55:16.615Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "spy-glass-house"
+    },
+    "version": "projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521"
+  }
+]
+[info] i  hosting[spy-glass-house]: finalizing version... 
+[debug] [2026-04-10T11:55:16.618Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:16.619Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:16.620Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/fefd68169a80e521 updateMask=status%2Cconfig
+[debug] [2026-04-10T11:55:16.620Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/fefd68169a80e521 {"status":"FINALIZED","config":{}}
+[debug] [2026-04-10T11:55:17.358Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/fefd68169a80e521 200
+[debug] [2026-04-10T11:55:17.359Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/fefd68169a80e521 {"name":"projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T11:55:13.422923Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T11:55:17.722088Z","finalizeUser":{"email":"mmpptt9@gmail.com"}}
+[debug] [2026-04-10T11:55:17.359Z] [hosting] finalized version for spy-glass-house:[object Object]
+[info] +  hosting[spy-glass-house]: version finalized 
+[info] i  hosting[spy-glass-house]: releasing new version... 
+[debug] [2026-04-10T11:55:17.360Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:17.360Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:17.360Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases versionName=projects%2F23532303547%2Fsites%2Fspy-glass-house%2Fversions%2Ffefd68169a80e521
+[debug] [2026-04-10T11:55:17.361Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {}
+[debug] [2026-04-10T11:55:18.200Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases 200
+[debug] [2026-04-10T11:55:18.201Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775822117841000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T11:55:13.422923Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T11:55:17.722088Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T11:55:17.841Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[debug] [2026-04-10T11:55:18.201Z] [hosting] release: {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775822117841000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T11:55:13.422923Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T11:55:17.722088Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T11:55:17.841Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  hosting[spy-glass-house]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/spy-glass-house/overview
+[info] Hosting URL: https://spy-glass-house.web.app
+[debug] [2026-04-10T11:55:47.267Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T11:55:47.274Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:sites:get spy-glass-house --project spy-glass-house
+[debug] [2026-04-10T11:55:47.276Z] CLI Version:   15.13.0
+[debug] [2026-04-10T11:55:47.276Z] Platform:      win32
+[debug] [2026-04-10T11:55:47.277Z] Node Version:  v24.14.1
+[debug] [2026-04-10T11:55:47.277Z] Time:          Fri Apr 10 2026 17:25:47 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T11:55:47.278Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T11:55:47.880Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T11:55:47.883Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T11:55:47.884Z] [iam] checking project spy-glass-house for permissions ["firebase.projects.get","firebasehosting.sites.get"]
+[debug] [2026-04-10T11:55:47.887Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:47.888Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:47.891Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions [none]
+[debug] [2026-04-10T11:55:47.891Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions  x-goog-user-project=spy-glass-house
+[debug] [2026-04-10T11:55:47.892Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.get"]}
+[debug] [2026-04-10T11:55:49.422Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions 200
+[debug] [2026-04-10T11:55:49.423Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.get"]}
+[debug] [2026-04-10T11:55:49.424Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:49.425Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T11:55:49.425Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/spy-glass-house/sites/spy-glass-house [none]
+[debug] [2026-04-10T11:55:50.647Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/spy-glass-house/sites/spy-glass-house 200
+[debug] [2026-04-10T11:55:50.648Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/spy-glass-house/sites/spy-glass-house {"name":"projects/spy-glass-house/sites/spy-glass-house","defaultUrl":"https://spy-glass-house.web.app","appId":"1:23532303547:web:61f7b9c2451f0f489fa59e","type":"DEFAULT_SITE"}
+[info] 
+[info] ┌──────────────┬──────────────────────────────────────────┐
+│ Site ID:     │ spy-glass-house                          │
+├──────────────┼──────────────────────────────────────────┤
+│ Default URL: │ https://spy-glass-house.web.app          │
+├──────────────┼──────────────────────────────────────────┤
+│ App ID:      │ 1:23532303547:web:61f7b9c2451f0f489fa59e │
+└──────────────┴──────────────────────────────────────────┘
+[debug] [2026-04-10T12:04:00.126Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T12:04:00.133Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:sites:create spyglasshouse-store --project spy-glass-house
+[debug] [2026-04-10T12:04:00.134Z] CLI Version:   15.13.0
+[debug] [2026-04-10T12:04:00.134Z] Platform:      win32
+[debug] [2026-04-10T12:04:00.134Z] Node Version:  v24.14.1
+[debug] [2026-04-10T12:04:00.135Z] Time:          Fri Apr 10 2026 17:34:00 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T12:04:00.135Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T12:04:00.777Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T12:04:00.779Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T12:04:00.780Z] [iam] checking project spy-glass-house for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-10T12:04:00.784Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:00.785Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:00.787Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions [none]
+[debug] [2026-04-10T12:04:00.789Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions  x-goog-user-project=spy-glass-house
+[debug] [2026-04-10T12:04:00.791Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T12:04:02.347Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions 200
+[debug] [2026-04-10T12:04:02.348Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T12:04:02.351Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:02.351Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:02.351Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house [none]
+[debug] [2026-04-10T12:04:02.703Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house 200
+[debug] [2026-04-10T12:04:02.704Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house {"projectNumber":"23532303547","projectId":"spy-glass-house","lifecycleState":"ACTIVE","name":"Spy Glass House ","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-04-08T14:02:32.476Z"}
+[debug] [2026-04-10T12:04:02.705Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:02.705Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:02.706Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites siteId=spyglasshouse-store&validateOnly=true
+[debug] [2026-04-10T12:04:02.706Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites {"appId":""}
+[debug] [2026-04-10T12:04:05.426Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites 200
+[debug] [2026-04-10T12:04:05.427Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites {"name":"projects/23532303547/sites/spyglasshouse-store","defaultUrl":"https://spyglasshouse-store.web.app","type":"USER_SITE"}
+[debug] [2026-04-10T12:04:05.428Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:05.428Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:05.428Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/spy-glass-house/sites siteId=spyglasshouse-store
+[debug] [2026-04-10T12:04:05.428Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/spy-glass-house/sites {"appId":""}
+[debug] [2026-04-10T12:04:06.642Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/spy-glass-house/sites 200
+[debug] [2026-04-10T12:04:06.642Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/spy-glass-house/sites {"name":"projects/spy-glass-house/sites/spyglasshouse-store","defaultUrl":"https://spyglasshouse-store.web.app","type":"USER_SITE"}
+[info] 
+[info] +  hosting:sites: Site spyglasshouse-store has been created in project spy-glass-house. 
+[info] +  hosting:sites: Site URL: https://spyglasshouse-store.web.app 
+[info] 
+[info] To deploy to this site, follow the guide at https://firebase.google.com/docs/hosting/multisites.
+[debug] [2026-04-10T12:04:14.806Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T12:04:14.814Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:clone spy-glass-house:live spyglasshouse-store:live --project spy-glass-house
+[debug] [2026-04-10T12:04:14.815Z] CLI Version:   15.13.0
+[debug] [2026-04-10T12:04:14.816Z] Platform:      win32
+[debug] [2026-04-10T12:04:14.816Z] Node Version:  v24.14.1
+[debug] [2026-04-10T12:04:14.816Z] Time:          Fri Apr 10 2026 17:34:14 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T12:04:14.817Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T12:04:15.412Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T12:04:15.414Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T12:04:15.417Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:15.418Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:15.420Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live [none]
+[debug] [2026-04-10T12:04:16.571Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live 200
+[debug] [2026-04-10T12:04:16.571Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live {"name":"projects/23532303547/sites/spy-glass-house/channels/live","url":"https://spy-glass-house.web.app","release":{"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775822117841000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T11:55:13.422923Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T11:55:17.722088Z","finalizeUser":{"email":"mmpptt9@gmail.com"},"fileCount":"11","versionBytes":"20651"},"type":"DEPLOY","releaseTime":"2026-04-10T11:55:17.841Z","releaseUser":{"email":"mmpptt9@gmail.com"}},"createTime":"2026-04-08T14:03:42.425388302Z","updateTime":"2026-04-10T11:55:17.841Z","retainedReleaseCount":2147483647}
+[debug] [2026-04-10T12:04:16.572Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:16.572Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:16.573Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live [none]
+[debug] [2026-04-10T12:04:16.966Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live 200
+[debug] [2026-04-10T12:04:16.966Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live","url":"https://spyglasshouse-store.web.app","createTime":"2026-04-10T12:04:06.995593588Z","updateTime":"2026-04-10T12:04:06.995593588Z","retainedReleaseCount":999999}
+[debug] [2026-04-10T12:04:16.971Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:16.972Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:16.972Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone [none]
+[debug] [2026-04-10T12:04:16.972Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"sourceVersion":"projects/23532303547/sites/spy-glass-house/versions/fefd68169a80e521","finalize":true}
+[debug] [2026-04-10T12:04:17.978Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone 200
+[debug] [2026-04-10T12:04:17.978Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2Y2ODdjNDA3MzRkMzZkODM"}
+[debug] [2026-04-10T12:04:17.980Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:17.981Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:17.981Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2Y2ODdjNDA3MzRkMzZkODM [none]
+[debug] [2026-04-10T12:04:18.394Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2Y2ODdjNDA3MzRkMzZkODM 200
+[debug] [2026-04-10T12:04:18.394Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2Y2ODdjNDA3MzRkMzZkODM {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2Y2ODdjNDA3MzRkMzZkODM","done":true,"response":{"@type":"type.googleapis.com/google.firebase.hosting.v1beta1.Version","name":"sites/spyglasshouse-store/versions/f687c40734d36d83","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"}}}
+[debug] [2026-04-10T12:04:18.395Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:18.396Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:04:18.397Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases versionName=sites%2Fspyglasshouse-store%2Fversions%2Ff687c40734d36d83
+[debug] [2026-04-10T12:04:19.393Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases 200
+[debug] [2026-04-10T12:04:19.393Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live/releases/1775822659096000","version":{"name":"projects/23532303547/sites/spyglasshouse-store/versions/f687c40734d36d83","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:04:17.961293Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T12:04:18.361846Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T12:04:19.096Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  Site spy-glass-house channel live has been cloned to site spyglasshouse-store channel live. 
+[info] +  Channel URL (live): https://spyglasshouse-store.web.app 
+[debug] [2026-04-10T12:23:52.770Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T12:23:52.796Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project spy-glass-house
+[debug] [2026-04-10T12:23:52.798Z] CLI Version:   15.13.0
+[debug] [2026-04-10T12:23:52.799Z] Platform:      win32
+[debug] [2026-04-10T12:23:52.800Z] Node Version:  v24.14.1
+[debug] [2026-04-10T12:23:52.800Z] Time:          Fri Apr 10 2026 17:53:52 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T12:23:52.801Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T12:24:00.750Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T12:24:00.756Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T12:24:00.757Z] [iam] checking project spy-glass-house for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-10T12:24:00.761Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:00.762Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:00.765Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions [none]
+[debug] [2026-04-10T12:24:00.765Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions  x-goog-user-project=spy-glass-house
+[debug] [2026-04-10T12:24:00.766Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T12:24:02.560Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions 200
+[debug] [2026-04-10T12:24:02.561Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T12:24:02.563Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:02.563Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:02.564Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house [none]
+[debug] [2026-04-10T12:24:03.029Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house 200
+[debug] [2026-04-10T12:24:03.029Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house {"projectId":"spy-glass-house","projectNumber":"23532303547","displayName":"Spy Glass House ","name":"projects/spy-glass-house","resources":{"hostingSite":"spy-glass-house"},"state":"ACTIVE","etag":"1_81fc3a6a-47cf-463a-99d4-36f1c5c9b10f"}
+[info] 
+[info] === Deploying to 'spy-glass-house'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-04-10T12:24:03.040Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:03.041Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:03.041Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions [none]
+[debug] [2026-04-10T12:24:03.041Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-04-10T12:24:04.684Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions 200
+[debug] [2026-04-10T12:24:04.684Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"name":"projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[spy-glass-house]: beginning deploy... 
+[info] i  hosting[spy-glass-house]: found 10 files in public 
+[debug] [2026-04-10T12:24:04.721Z] [hosting] uploading with 200 concurrency
+[debug] [2026-04-10T12:24:04.747Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:04.747Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:04.749Z] [hosting] hash cache [cHVibGlj] stored for 10 files
+[debug] [2026-04-10T12:24:04.750Z] [hosting][hash queue][FINAL] {"max":14,"min":1,"avg":4.5,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":23}
+[debug] [2026-04-10T12:24:04.751Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce:populateFiles [none]
+[debug] [2026-04-10T12:24:04.751Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce:populateFiles {"files":{"/owner-portal-sgh-7842.html":"123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72","/index.html":"fc048b7a8ef560846c0a5d1d6bccafa78cd6c7daf1fe4775907481e070fb0276","/admin.html":"2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a","/assets/shared.js":"d9792c2ffd8be85cd5c3f2c112b4d122b95d65405a1a472222eeeed95d1657c9","/assets/app-config.js":"78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5","/assets/admin.js":"438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3","/assets/admin.css":"8adf0e592d3e4bc359c4d7c89362ecac640e771d421aec98a0bd1b4ec198b6ba","/assets/site.js":"684b4f2976564ee245086f5950d4b9c123a1dd2472ae5ac8c70a05d29f7ac918","/assets/site.css":"267a57dc6cb6bc241caba914c4036c0862489443947c09069f55d8bb822ef8b7","/assets/mirror-fallback.svg":"ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb"}}
+[debug] [2026-04-10T12:24:05.644Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce:populateFiles 200
+[debug] [2026-04-10T12:24:05.645Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce:populateFiles {"uploadRequiredHashes":["ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb","684b4f2976564ee245086f5950d4b9c123a1dd2472ae5ac8c70a05d29f7ac918","267a57dc6cb6bc241caba914c4036c0862489443947c09069f55d8bb822ef8b7"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files"}
+[debug] [2026-04-10T12:24:05.647Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:05.647Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:05.649Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:05.649Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:05.650Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:05.651Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:05.651Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb [none]
+[debug] [2026-04-10T12:24:05.651Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb [stream]
+[debug] [2026-04-10T12:24:05.655Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/684b4f2976564ee245086f5950d4b9c123a1dd2472ae5ac8c70a05d29f7ac918 [none]
+[debug] [2026-04-10T12:24:05.655Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/684b4f2976564ee245086f5950d4b9c123a1dd2472ae5ac8c70a05d29f7ac918 [stream]
+[debug] [2026-04-10T12:24:05.658Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/267a57dc6cb6bc241caba914c4036c0862489443947c09069f55d8bb822ef8b7 [none]
+[debug] [2026-04-10T12:24:05.658Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/267a57dc6cb6bc241caba914c4036c0862489443947c09069f55d8bb822ef8b7 [stream]
+[debug] [2026-04-10T12:24:05.661Z] [hosting][populate queue][FINAL] {"max":905,"min":905,"avg":905,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":915}
+[debug] [2026-04-10T12:24:05.661Z] [hosting] uploads queued: 3
+[info] i  hosting: uploading new files [0/3] (0%) 
+[debug] [2026-04-10T12:24:07.521Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/684b4f2976564ee245086f5950d4b9c123a1dd2472ae5ac8c70a05d29f7ac918 200
+[debug] [2026-04-10T12:24:07.522Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/684b4f2976564ee245086f5950d4b9c123a1dd2472ae5ac8c70a05d29f7ac918 [stream]
+[debug] [2026-04-10T12:24:07.562Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb 200
+[debug] [2026-04-10T12:24:07.562Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb [stream]
+[debug] [2026-04-10T12:24:07.757Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/267a57dc6cb6bc241caba914c4036c0862489443947c09069f55d8bb822ef8b7 200
+[debug] [2026-04-10T12:24:07.758Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3f67955579aecfce/files/267a57dc6cb6bc241caba914c4036c0862489443947c09069f55d8bb822ef8b7 [stream]
+[debug] [2026-04-10T12:24:07.758Z] [hosting][upload queue][FINAL] {"max":2108,"min":1874,"avg":1966.6666666666667,"active":0,"complete":3,"success":3,"errored":0,"retried":0,"total":3,"elapsed":2113}
+[info] i  hosting: upload complete 
+[info] +  hosting[spy-glass-house]: file upload complete 
+[debug] [2026-04-10T12:24:07.759Z] [hosting] deploy completed after 3069ms
+[debug] [2026-04-10T12:24:07.760Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "spy-glass-house"
+    },
+    "version": "projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce"
+  }
+]
+[info] i  hosting[spy-glass-house]: finalizing version... 
+[debug] [2026-04-10T12:24:07.762Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:07.763Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:07.764Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3f67955579aecfce updateMask=status%2Cconfig
+[debug] [2026-04-10T12:24:07.764Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3f67955579aecfce {"status":"FINALIZED","config":{}}
+[debug] [2026-04-10T12:24:08.829Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3f67955579aecfce 200
+[debug] [2026-04-10T12:24:08.829Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3f67955579aecfce {"name":"projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:24:04.637846Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T12:24:09.170572Z","finalizeUser":{"email":"mmpptt9@gmail.com"}}
+[debug] [2026-04-10T12:24:08.829Z] [hosting] finalized version for spy-glass-house:[object Object]
+[info] +  hosting[spy-glass-house]: version finalized 
+[info] i  hosting[spy-glass-house]: releasing new version... 
+[debug] [2026-04-10T12:24:08.830Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:08.831Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:08.831Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases versionName=projects%2F23532303547%2Fsites%2Fspy-glass-house%2Fversions%2F3f67955579aecfce
+[debug] [2026-04-10T12:24:08.831Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {}
+[debug] [2026-04-10T12:24:09.629Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases 200
+[debug] [2026-04-10T12:24:09.630Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775823849325000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:24:04.637846Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T12:24:09.170572Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T12:24:09.325Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[debug] [2026-04-10T12:24:09.630Z] [hosting] release: {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775823849325000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:24:04.637846Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T12:24:09.170572Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T12:24:09.325Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  hosting[spy-glass-house]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/spy-glass-house/overview
+[info] Hosting URL: https://spy-glass-house.web.app
+[debug] [2026-04-10T12:24:21.891Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T12:24:21.899Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:clone spy-glass-house:live spyglasshouse-store:live --project spy-glass-house
+[debug] [2026-04-10T12:24:21.900Z] CLI Version:   15.13.0
+[debug] [2026-04-10T12:24:21.900Z] Platform:      win32
+[debug] [2026-04-10T12:24:21.900Z] Node Version:  v24.14.1
+[debug] [2026-04-10T12:24:21.901Z] Time:          Fri Apr 10 2026 17:54:21 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T12:24:21.901Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T12:24:22.850Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T12:24:22.852Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T12:24:22.857Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:22.858Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:22.861Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live [none]
+[debug] [2026-04-10T12:24:24.514Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live 200
+[debug] [2026-04-10T12:24:24.515Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live {"name":"projects/23532303547/sites/spy-glass-house/channels/live","url":"https://spy-glass-house.web.app","release":{"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775823849325000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:24:04.637846Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T12:24:09.170572Z","finalizeUser":{"email":"mmpptt9@gmail.com"}},"type":"DEPLOY","releaseTime":"2026-04-10T12:24:09.325Z","releaseUser":{"email":"mmpptt9@gmail.com"}},"createTime":"2026-04-08T14:03:42.425388302Z","updateTime":"2026-04-10T12:24:09.325Z","retainedReleaseCount":2147483647}
+[debug] [2026-04-10T12:24:24.515Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:24.516Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:24.516Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live [none]
+[debug] [2026-04-10T12:24:25.297Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live 200
+[debug] [2026-04-10T12:24:25.298Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live","url":"https://spyglasshouse-store.web.app","release":{"name":"projects/23532303547/sites/spyglasshouse-store/channels/live/releases/1775822659096000","version":{"name":"projects/23532303547/sites/spyglasshouse-store/versions/f687c40734d36d83","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:04:17.961293Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T12:04:18.361846Z","finalizeUser":{"email":"mmpptt9@gmail.com"},"fileCount":"11","versionBytes":"20651"},"type":"DEPLOY","releaseTime":"2026-04-10T12:04:19.096Z","releaseUser":{"email":"mmpptt9@gmail.com"}},"createTime":"2026-04-10T12:04:06.995593588Z","updateTime":"2026-04-10T12:04:19.096Z","retainedReleaseCount":999999}
+[debug] [2026-04-10T12:24:25.304Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:25.304Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:25.304Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone [none]
+[debug] [2026-04-10T12:24:25.305Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"sourceVersion":"projects/23532303547/sites/spy-glass-house/versions/3f67955579aecfce","finalize":true}
+[debug] [2026-04-10T12:24:26.179Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone 200
+[debug] [2026-04-10T12:24:26.180Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2E3NWY5N2M3ZTcwMjY1OWM"}
+[debug] [2026-04-10T12:24:26.182Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:26.182Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:26.183Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2E3NWY5N2M3ZTcwMjY1OWM [none]
+[debug] [2026-04-10T12:24:26.583Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2E3NWY5N2M3ZTcwMjY1OWM 200
+[debug] [2026-04-10T12:24:26.583Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2E3NWY5N2M3ZTcwMjY1OWM {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zL2E3NWY5N2M3ZTcwMjY1OWM","done":true,"response":{"@type":"type.googleapis.com/google.firebase.hosting.v1beta1.Version","name":"sites/spyglasshouse-store/versions/a75f97c7e702659c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"}}}
+[debug] [2026-04-10T12:24:26.584Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:26.584Z] Checked if tokens are valid: true, expires at: 1775825604186
+[debug] [2026-04-10T12:24:26.585Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases versionName=sites%2Fspyglasshouse-store%2Fversions%2Fa75f97c7e702659c
+[debug] [2026-04-10T12:24:27.399Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases 200
+[debug] [2026-04-10T12:24:27.400Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live/releases/1775823867091000","version":{"name":"projects/23532303547/sites/spyglasshouse-store/versions/a75f97c7e702659c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:24:26.243344Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T12:24:26.420876Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T12:24:27.091Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  Site spy-glass-house channel live has been cloned to site spyglasshouse-store channel live. 
+[info] +  Channel URL (live): https://spyglasshouse-store.web.app 
+[debug] [2026-04-10T13:19:07.903Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T13:19:07.928Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project spy-glass-house
+[debug] [2026-04-10T13:19:07.929Z] CLI Version:   15.13.0
+[debug] [2026-04-10T13:19:07.930Z] Platform:      win32
+[debug] [2026-04-10T13:19:07.930Z] Node Version:  v24.14.1
+[debug] [2026-04-10T13:19:07.931Z] Time:          Fri Apr 10 2026 18:49:07 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T13:19:07.931Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T13:19:15.884Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T13:19:15.889Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T13:19:15.889Z] [iam] checking project spy-glass-house for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-10T13:19:15.894Z] Checked if tokens are valid: false, expires at: 1775825604186
+[debug] [2026-04-10T13:19:15.895Z] Checked if tokens are valid: false, expires at: 1775825604186
+[debug] [2026-04-10T13:19:15.896Z] > refreshing access token with scopes: []
+[debug] [2026-04-10T13:19:15.904Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-04-10T13:19:15.904Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-10T13:19:16.299Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-04-10T13:19:16.299Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-10T13:19:16.319Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions [none]
+[debug] [2026-04-10T13:19:16.319Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions  x-goog-user-project=spy-glass-house
+[debug] [2026-04-10T13:19:16.319Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T13:19:17.811Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions 200
+[debug] [2026-04-10T13:19:17.811Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T13:19:17.813Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:17.813Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:17.814Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house [none]
+[debug] [2026-04-10T13:19:18.325Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house 200
+[debug] [2026-04-10T13:19:18.326Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house {"projectId":"spy-glass-house","projectNumber":"23532303547","displayName":"Spy Glass House ","name":"projects/spy-glass-house","resources":{"hostingSite":"spy-glass-house"},"state":"ACTIVE","etag":"1_81fc3a6a-47cf-463a-99d4-36f1c5c9b10f"}
+[info] 
+[info] === Deploying to 'spy-glass-house'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-04-10T13:19:18.338Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:18.339Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:18.339Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions [none]
+[debug] [2026-04-10T13:19:18.339Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-04-10T13:19:20.259Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions 200
+[debug] [2026-04-10T13:19:20.259Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"name":"projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[spy-glass-house]: beginning deploy... 
+[info] i  hosting[spy-glass-house]: found 16 files in public 
+[debug] [2026-04-10T13:19:20.304Z] [hosting] uploading with 200 concurrency
+[debug] [2026-04-10T13:19:20.348Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:20.348Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:20.353Z] [hosting] hash cache [cHVibGlj] stored for 16 files
+[debug] [2026-04-10T13:19:20.354Z] [hosting][hash queue][FINAL] {"max":28,"min":1,"avg":15.375,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":44}
+[debug] [2026-04-10T13:19:20.355Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3:populateFiles [none]
+[debug] [2026-04-10T13:19:20.355Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3:populateFiles {"files":{"/owner-portal-sgh-7842.html":"123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72","/admin.html":"2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a","/assets/site.js":"684b4f2976564ee245086f5950d4b9c123a1dd2472ae5ac8c70a05d29f7ac918","/assets/mirror-fallback.svg":"ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb","/assets/app-config.js":"78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5","/assets/admin.js":"438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3","/assets/admin.css":"8adf0e592d3e4bc359c4d7c89362ecac640e771d421aec98a0bd1b4ec198b6ba","/index.html":"42e7770ba3229d73031d9128a3c3e39b271d863a9fe7b292583c964aff91d081","/assets/site.css":"3d79020ca778a5432fbb9cc5bcab7a0f9440d3f4f23408fa35e2d0a3d91f363b","/assets/shared.js":"82ec07c5abe6334c2c64786da203802073ece89327d18b36e1c85ec28575e5b3","/assets/product-regal.svg":"c1c9c18b7c1b766d3a25b834927eed500bbc23fa46ab7ba70bbedcb0a0808f65","/assets/product-orion.svg":"d6600f123628b75e419ecbd80833a945dc302b82c055f67f796197bbfbcd04b4","/assets/product-nova.svg":"bcd5310c754ddcb189f18a0a057f8c74137ebc0b574d8a4e4666d39e897e1de8","/assets/product-luma.svg":"0113994a7555ceefd530d21c5ab4f5066a33d7cb082ead0346e48b8a3a91d895","/assets/product-hexa.svg":"0869932a98ee347621beeb070784c652cb23e778f22d50d239e771570a1a2abf","/assets/product-aurora.svg":"e93d799e46121dfb7e081052a33ad604d09cb83746eefc604f9518a1f60c27f9"}}
+[debug] [2026-04-10T13:19:21.171Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3:populateFiles 200
+[debug] [2026-04-10T13:19:21.171Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3:populateFiles {"uploadRequiredHashes":["c1c9c18b7c1b766d3a25b834927eed500bbc23fa46ab7ba70bbedcb0a0808f65","82ec07c5abe6334c2c64786da203802073ece89327d18b36e1c85ec28575e5b3","d6600f123628b75e419ecbd80833a945dc302b82c055f67f796197bbfbcd04b4","3d79020ca778a5432fbb9cc5bcab7a0f9440d3f4f23408fa35e2d0a3d91f363b","0869932a98ee347621beeb070784c652cb23e778f22d50d239e771570a1a2abf","0113994a7555ceefd530d21c5ab4f5066a33d7cb082ead0346e48b8a3a91d895","e93d799e46121dfb7e081052a33ad604d09cb83746eefc604f9518a1f60c27f9","42e7770ba3229d73031d9128a3c3e39b271d863a9fe7b292583c964aff91d081","bcd5310c754ddcb189f18a0a057f8c74137ebc0b574d8a4e4666d39e897e1de8"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files"}
+[debug] [2026-04-10T13:19:21.173Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.174Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.175Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.175Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.176Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.176Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.177Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.177Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.178Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.178Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.179Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.179Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.180Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.180Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.181Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.181Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.181Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.182Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:21.182Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/c1c9c18b7c1b766d3a25b834927eed500bbc23fa46ab7ba70bbedcb0a0808f65 [none]
+[debug] [2026-04-10T13:19:21.182Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/c1c9c18b7c1b766d3a25b834927eed500bbc23fa46ab7ba70bbedcb0a0808f65 [stream]
+[debug] [2026-04-10T13:19:21.185Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/82ec07c5abe6334c2c64786da203802073ece89327d18b36e1c85ec28575e5b3 [none]
+[debug] [2026-04-10T13:19:21.186Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/82ec07c5abe6334c2c64786da203802073ece89327d18b36e1c85ec28575e5b3 [stream]
+[debug] [2026-04-10T13:19:21.189Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/d6600f123628b75e419ecbd80833a945dc302b82c055f67f796197bbfbcd04b4 [none]
+[debug] [2026-04-10T13:19:21.189Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/d6600f123628b75e419ecbd80833a945dc302b82c055f67f796197bbfbcd04b4 [stream]
+[debug] [2026-04-10T13:19:21.192Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/3d79020ca778a5432fbb9cc5bcab7a0f9440d3f4f23408fa35e2d0a3d91f363b [none]
+[debug] [2026-04-10T13:19:21.193Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/3d79020ca778a5432fbb9cc5bcab7a0f9440d3f4f23408fa35e2d0a3d91f363b [stream]
+[debug] [2026-04-10T13:19:21.196Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0869932a98ee347621beeb070784c652cb23e778f22d50d239e771570a1a2abf [none]
+[debug] [2026-04-10T13:19:21.196Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0869932a98ee347621beeb070784c652cb23e778f22d50d239e771570a1a2abf [stream]
+[debug] [2026-04-10T13:19:21.199Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0113994a7555ceefd530d21c5ab4f5066a33d7cb082ead0346e48b8a3a91d895 [none]
+[debug] [2026-04-10T13:19:21.200Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0113994a7555ceefd530d21c5ab4f5066a33d7cb082ead0346e48b8a3a91d895 [stream]
+[debug] [2026-04-10T13:19:21.202Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/e93d799e46121dfb7e081052a33ad604d09cb83746eefc604f9518a1f60c27f9 [none]
+[debug] [2026-04-10T13:19:21.203Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/e93d799e46121dfb7e081052a33ad604d09cb83746eefc604f9518a1f60c27f9 [stream]
+[debug] [2026-04-10T13:19:21.205Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/42e7770ba3229d73031d9128a3c3e39b271d863a9fe7b292583c964aff91d081 [none]
+[debug] [2026-04-10T13:19:21.205Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/42e7770ba3229d73031d9128a3c3e39b271d863a9fe7b292583c964aff91d081 [stream]
+[debug] [2026-04-10T13:19:21.207Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/bcd5310c754ddcb189f18a0a057f8c74137ebc0b574d8a4e4666d39e897e1de8 [none]
+[debug] [2026-04-10T13:19:21.208Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/bcd5310c754ddcb189f18a0a057f8c74137ebc0b574d8a4e4666d39e897e1de8 [stream]
+[debug] [2026-04-10T13:19:21.210Z] [hosting][populate queue][FINAL] {"max":835,"min":835,"avg":835,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":863}
+[debug] [2026-04-10T13:19:21.210Z] [hosting] uploads queued: 9
+[info] i  hosting: uploading new files [0/9] (0%) 
+[debug] [2026-04-10T13:19:23.016Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/d6600f123628b75e419ecbd80833a945dc302b82c055f67f796197bbfbcd04b4 200
+[debug] [2026-04-10T13:19:23.016Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/d6600f123628b75e419ecbd80833a945dc302b82c055f67f796197bbfbcd04b4 [stream]
+[debug] [2026-04-10T13:19:23.025Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0113994a7555ceefd530d21c5ab4f5066a33d7cb082ead0346e48b8a3a91d895 200
+[debug] [2026-04-10T13:19:23.026Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0113994a7555ceefd530d21c5ab4f5066a33d7cb082ead0346e48b8a3a91d895 [stream]
+[debug] [2026-04-10T13:19:23.048Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/82ec07c5abe6334c2c64786da203802073ece89327d18b36e1c85ec28575e5b3 200
+[debug] [2026-04-10T13:19:23.049Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/82ec07c5abe6334c2c64786da203802073ece89327d18b36e1c85ec28575e5b3 [stream]
+[debug] [2026-04-10T13:19:23.084Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/42e7770ba3229d73031d9128a3c3e39b271d863a9fe7b292583c964aff91d081 200
+[debug] [2026-04-10T13:19:23.084Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/42e7770ba3229d73031d9128a3c3e39b271d863a9fe7b292583c964aff91d081 [stream]
+[debug] [2026-04-10T13:19:23.101Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0869932a98ee347621beeb070784c652cb23e778f22d50d239e771570a1a2abf 200
+[debug] [2026-04-10T13:19:23.102Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/0869932a98ee347621beeb070784c652cb23e778f22d50d239e771570a1a2abf [stream]
+[debug] [2026-04-10T13:19:23.173Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/bcd5310c754ddcb189f18a0a057f8c74137ebc0b574d8a4e4666d39e897e1de8 200
+[debug] [2026-04-10T13:19:23.173Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/bcd5310c754ddcb189f18a0a057f8c74137ebc0b574d8a4e4666d39e897e1de8 [stream]
+[debug] [2026-04-10T13:19:23.297Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/3d79020ca778a5432fbb9cc5bcab7a0f9440d3f4f23408fa35e2d0a3d91f363b 200
+[debug] [2026-04-10T13:19:23.298Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/3d79020ca778a5432fbb9cc5bcab7a0f9440d3f4f23408fa35e2d0a3d91f363b [stream]
+[debug] [2026-04-10T13:19:23.501Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/e93d799e46121dfb7e081052a33ad604d09cb83746eefc604f9518a1f60c27f9 200
+[debug] [2026-04-10T13:19:23.501Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/e93d799e46121dfb7e081052a33ad604d09cb83746eefc604f9518a1f60c27f9 [stream]
+[debug] [2026-04-10T13:19:24.057Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/c1c9c18b7c1b766d3a25b834927eed500bbc23fa46ab7ba70bbedcb0a0808f65 200
+[debug] [2026-04-10T13:19:24.057Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/305436c9854639c3/files/c1c9c18b7c1b766d3a25b834927eed500bbc23fa46ab7ba70bbedcb0a0808f65 [stream]
+[debug] [2026-04-10T13:19:24.058Z] [hosting][upload queue][FINAL] {"max":2886,"min":1841,"avg":2079.3333333333335,"active":0,"complete":9,"success":9,"errored":0,"retried":0,"total":9,"elapsed":2886}
+[info] i  hosting: upload complete 
+[info] +  hosting[spy-glass-house]: file upload complete 
+[debug] [2026-04-10T13:19:24.059Z] [hosting] deploy completed after 3794ms
+[debug] [2026-04-10T13:19:24.059Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "spy-glass-house"
+    },
+    "version": "projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3"
+  }
+]
+[info] i  hosting[spy-glass-house]: finalizing version... 
+[debug] [2026-04-10T13:19:24.062Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:24.063Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:24.064Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/305436c9854639c3 updateMask=status%2Cconfig
+[debug] [2026-04-10T13:19:24.064Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/305436c9854639c3 {"status":"FINALIZED","config":{}}
+[debug] [2026-04-10T13:19:25.082Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/305436c9854639c3 200
+[debug] [2026-04-10T13:19:25.082Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/305436c9854639c3 {"name":"projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:19:19.837637Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T13:19:25.132606Z","finalizeUser":{"email":"mmpptt9@gmail.com"}}
+[debug] [2026-04-10T13:19:25.083Z] [hosting] finalized version for spy-glass-house:[object Object]
+[info] +  hosting[spy-glass-house]: version finalized 
+[info] i  hosting[spy-glass-house]: releasing new version... 
+[debug] [2026-04-10T13:19:25.084Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:25.084Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:25.085Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases versionName=projects%2F23532303547%2Fsites%2Fspy-glass-house%2Fversions%2F305436c9854639c3
+[debug] [2026-04-10T13:19:25.085Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {}
+[debug] [2026-04-10T13:19:25.903Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases 200
+[debug] [2026-04-10T13:19:25.904Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775827165280000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:19:19.837637Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T13:19:25.132606Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:19:25.280Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[debug] [2026-04-10T13:19:25.904Z] [hosting] release: {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775827165280000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:19:19.837637Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T13:19:25.132606Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:19:25.280Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  hosting[spy-glass-house]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/spy-glass-house/overview
+[info] Hosting URL: https://spy-glass-house.web.app
+[debug] [2026-04-10T13:19:36.454Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T13:19:36.463Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:clone spy-glass-house:live spyglasshouse-store:live --project spy-glass-house
+[debug] [2026-04-10T13:19:36.464Z] CLI Version:   15.13.0
+[debug] [2026-04-10T13:19:36.464Z] Platform:      win32
+[debug] [2026-04-10T13:19:36.465Z] Node Version:  v24.14.1
+[debug] [2026-04-10T13:19:36.465Z] Time:          Fri Apr 10 2026 18:49:36 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T13:19:36.465Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T13:19:37.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T13:19:37.160Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T13:19:37.165Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:37.167Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:37.171Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live [none]
+[debug] [2026-04-10T13:19:38.307Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live 200
+[debug] [2026-04-10T13:19:38.308Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live {"name":"projects/23532303547/sites/spy-glass-house/channels/live","url":"https://spy-glass-house.web.app","release":{"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775827165280000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:19:19.837637Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T13:19:25.132606Z","finalizeUser":{"email":"mmpptt9@gmail.com"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:19:25.280Z","releaseUser":{"email":"mmpptt9@gmail.com"}},"createTime":"2026-04-08T14:03:42.425388302Z","updateTime":"2026-04-10T13:19:25.280Z","retainedReleaseCount":2147483647}
+[debug] [2026-04-10T13:19:38.308Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:38.309Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:38.309Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live [none]
+[debug] [2026-04-10T13:19:38.819Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live 200
+[debug] [2026-04-10T13:19:38.819Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live","url":"https://spyglasshouse-store.web.app","release":{"name":"projects/23532303547/sites/spyglasshouse-store/channels/live/releases/1775823867091000","version":{"name":"projects/23532303547/sites/spyglasshouse-store/versions/a75f97c7e702659c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T12:24:26.243344Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T12:24:26.420876Z","finalizeUser":{"email":"mmpptt9@gmail.com"},"fileCount":"12","versionBytes":"21535"},"type":"DEPLOY","releaseTime":"2026-04-10T12:24:27.091Z","releaseUser":{"email":"mmpptt9@gmail.com"}},"createTime":"2026-04-10T12:04:06.995593588Z","updateTime":"2026-04-10T12:24:27.091Z","retainedReleaseCount":999999}
+[debug] [2026-04-10T13:19:38.825Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:38.825Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:38.825Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone [none]
+[debug] [2026-04-10T13:19:38.826Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"sourceVersion":"projects/23532303547/sites/spy-glass-house/versions/305436c9854639c3","finalize":true}
+[debug] [2026-04-10T13:19:39.975Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone 200
+[debug] [2026-04-10T13:19:39.976Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzlhZWJkM2Q2MzFhYzVmNjM"}
+[debug] [2026-04-10T13:19:39.978Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:39.979Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:39.979Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzlhZWJkM2Q2MzFhYzVmNjM [none]
+[debug] [2026-04-10T13:19:40.426Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzlhZWJkM2Q2MzFhYzVmNjM 200
+[debug] [2026-04-10T13:19:40.426Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzlhZWJkM2Q2MzFhYzVmNjM {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzlhZWJkM2Q2MzFhYzVmNjM","done":true,"response":{"@type":"type.googleapis.com/google.firebase.hosting.v1beta1.Version","name":"sites/spyglasshouse-store/versions/9aebd3d631ac5f63","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"}}}
+[debug] [2026-04-10T13:19:40.427Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:40.428Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:19:40.428Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases versionName=sites%2Fspyglasshouse-store%2Fversions%2F9aebd3d631ac5f63
+[debug] [2026-04-10T13:19:41.233Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases 200
+[debug] [2026-04-10T13:19:41.234Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live/releases/1775827180634000","version":{"name":"projects/23532303547/sites/spyglasshouse-store/versions/9aebd3d631ac5f63","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:19:39.656828Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T13:19:40.068039Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:19:40.634Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  Site spy-glass-house channel live has been cloned to site spyglasshouse-store channel live. 
+[info] +  Channel URL (live): https://spyglasshouse-store.web.app 
+[debug] [2026-04-10T13:54:16.086Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T13:54:16.106Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project spy-glass-house
+[debug] [2026-04-10T13:54:16.108Z] CLI Version:   15.13.0
+[debug] [2026-04-10T13:54:16.109Z] Platform:      win32
+[debug] [2026-04-10T13:54:16.109Z] Node Version:  v24.14.1
+[debug] [2026-04-10T13:54:16.110Z] Time:          Fri Apr 10 2026 19:24:16 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T13:54:16.110Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T13:54:21.694Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T13:54:21.698Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T13:54:21.698Z] [iam] checking project spy-glass-house for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-10T13:54:21.701Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:21.702Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:21.706Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions [none]
+[debug] [2026-04-10T13:54:21.707Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions  x-goog-user-project=spy-glass-house
+[debug] [2026-04-10T13:54:21.707Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T13:54:23.407Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions 200
+[debug] [2026-04-10T13:54:23.408Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/spy-glass-house:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-10T13:54:23.409Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:23.410Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:23.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house [none]
+[debug] [2026-04-10T13:54:24.166Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house 200
+[debug] [2026-04-10T13:54:24.166Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/spy-glass-house {"projectId":"spy-glass-house","projectNumber":"23532303547","displayName":"Spy Glass House ","name":"projects/spy-glass-house","resources":{"hostingSite":"spy-glass-house"},"state":"ACTIVE","etag":"1_81fc3a6a-47cf-463a-99d4-36f1c5c9b10f"}
+[info] 
+[info] === Deploying to 'spy-glass-house'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-04-10T13:54:24.178Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:24.178Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:24.179Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions [none]
+[debug] [2026-04-10T13:54:24.179Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-04-10T13:54:26.106Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions 200
+[debug] [2026-04-10T13:54:26.106Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions {"name":"projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[spy-glass-house]: beginning deploy... 
+[info] i  hosting[spy-glass-house]: found 16 files in public 
+[debug] [2026-04-10T13:54:26.146Z] [hosting] uploading with 200 concurrency
+[debug] [2026-04-10T13:54:26.163Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:26.164Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:26.168Z] [hosting] hash cache [cHVibGlj] stored for 16 files
+[debug] [2026-04-10T13:54:26.168Z] [hosting][hash queue][FINAL] {"max":11,"min":1,"avg":1.625,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":17}
+[debug] [2026-04-10T13:54:26.169Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8:populateFiles [none]
+[debug] [2026-04-10T13:54:26.169Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8:populateFiles {"files":{"/owner-portal-sgh-7842.html":"123117a3f2dd819740d5109b59c5624b54320a734eb796bf236d6968baf4fd72","/index.html":"42e7770ba3229d73031d9128a3c3e39b271d863a9fe7b292583c964aff91d081","/admin.html":"2af7e3caeaad1681b456354552a0b9c2e3adab6f8c2ae36ca386588945bc4a1a","/assets/site.css":"3d79020ca778a5432fbb9cc5bcab7a0f9440d3f4f23408fa35e2d0a3d91f363b","/assets/shared.js":"82ec07c5abe6334c2c64786da203802073ece89327d18b36e1c85ec28575e5b3","/assets/product-regal.svg":"c1c9c18b7c1b766d3a25b834927eed500bbc23fa46ab7ba70bbedcb0a0808f65","/assets/product-orion.svg":"d6600f123628b75e419ecbd80833a945dc302b82c055f67f796197bbfbcd04b4","/assets/product-nova.svg":"bcd5310c754ddcb189f18a0a057f8c74137ebc0b574d8a4e4666d39e897e1de8","/assets/product-luma.svg":"0113994a7555ceefd530d21c5ab4f5066a33d7cb082ead0346e48b8a3a91d895","/assets/product-hexa.svg":"0869932a98ee347621beeb070784c652cb23e778f22d50d239e771570a1a2abf","/assets/product-aurora.svg":"e93d799e46121dfb7e081052a33ad604d09cb83746eefc604f9518a1f60c27f9","/assets/mirror-fallback.svg":"ef49473d92f3e9522dcef4a14a005c36aa0076d24781b57cc75b11bcdb0388fb","/assets/app-config.js":"78be0cd01df498c265b9bc9f283ae0b2da95c4bb31779c6f84aafe39c47994a5","/assets/admin.js":"438d35bb353e5ec524ee88dc9b8fc920c7a5f7a4b73d4528a7ecb22bab7fbfa3","/assets/admin.css":"8adf0e592d3e4bc359c4d7c89362ecac640e771d421aec98a0bd1b4ec198b6ba","/assets/site.js":"d4913e24ccc0bd78a00b2752e0e40039b62451d8ac45510b211aa2181561b426"}}
+[debug] [2026-04-10T13:54:26.801Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8:populateFiles 200
+[debug] [2026-04-10T13:54:26.801Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8:populateFiles {"uploadRequiredHashes":["d4913e24ccc0bd78a00b2752e0e40039b62451d8ac45510b211aa2181561b426"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3ad85fb35d8e22b8/files"}
+[debug] [2026-04-10T13:54:26.803Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:26.803Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:26.803Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3ad85fb35d8e22b8/files/d4913e24ccc0bd78a00b2752e0e40039b62451d8ac45510b211aa2181561b426 [none]
+[debug] [2026-04-10T13:54:26.804Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3ad85fb35d8e22b8/files/d4913e24ccc0bd78a00b2752e0e40039b62451d8ac45510b211aa2181561b426 [stream]
+[debug] [2026-04-10T13:54:26.807Z] [hosting][populate queue][FINAL] {"max":640,"min":640,"avg":640,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":644}
+[debug] [2026-04-10T13:54:26.807Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2026-04-10T13:54:28.544Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3ad85fb35d8e22b8/files/d4913e24ccc0bd78a00b2752e0e40039b62451d8ac45510b211aa2181561b426 200
+[debug] [2026-04-10T13:54:28.544Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/spy-glass-house/versions/3ad85fb35d8e22b8/files/d4913e24ccc0bd78a00b2752e0e40039b62451d8ac45510b211aa2181561b426 [stream]
+[debug] [2026-04-10T13:54:28.545Z] [hosting][upload queue][FINAL] {"max":1742,"min":1742,"avg":1742,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1743}
+[info] i  hosting: upload complete 
+[info] +  hosting[spy-glass-house]: file upload complete 
+[debug] [2026-04-10T13:54:28.546Z] [hosting] deploy completed after 2434ms
+[debug] [2026-04-10T13:54:28.546Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "spy-glass-house"
+    },
+    "version": "projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8"
+  }
+]
+[info] i  hosting[spy-glass-house]: finalizing version... 
+[debug] [2026-04-10T13:54:28.549Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:28.549Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:28.550Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3ad85fb35d8e22b8 updateMask=status%2Cconfig
+[debug] [2026-04-10T13:54:28.551Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3ad85fb35d8e22b8 {"status":"FINALIZED","config":{}}
+[debug] [2026-04-10T13:54:29.701Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3ad85fb35d8e22b8 200
+[debug] [2026-04-10T13:54:29.701Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/versions/3ad85fb35d8e22b8 {"name":"projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:54:25.860198Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T13:54:29.918555Z","finalizeUser":{"email":"mmpptt9@gmail.com"}}
+[debug] [2026-04-10T13:54:29.702Z] [hosting] finalized version for spy-glass-house:[object Object]
+[info] +  hosting[spy-glass-house]: version finalized 
+[info] i  hosting[spy-glass-house]: releasing new version... 
+[debug] [2026-04-10T13:54:29.703Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:29.703Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:29.704Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases versionName=projects%2F23532303547%2Fsites%2Fspy-glass-house%2Fversions%2F3ad85fb35d8e22b8
+[debug] [2026-04-10T13:54:29.704Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {}
+[debug] [2026-04-10T13:54:30.857Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases 200
+[debug] [2026-04-10T13:54:30.858Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live/releases {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775829270415000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:54:25.860198Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T13:54:29.918555Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:54:30.415Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[debug] [2026-04-10T13:54:30.858Z] [hosting] release: {"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775829270415000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:54:25.860198Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T13:54:29.918555Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:54:30.415Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  hosting[spy-glass-house]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/spy-glass-house/overview
+[info] Hosting URL: https://spy-glass-house.web.app
+[debug] [2026-04-10T13:54:41.481Z] ----------------------------------------------------------------------
+[debug] [2026-04-10T13:54:41.489Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PREET\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:clone spy-glass-house:live spyglasshouse-store:live --project spy-glass-house
+[debug] [2026-04-10T13:54:41.490Z] CLI Version:   15.13.0
+[debug] [2026-04-10T13:54:41.490Z] Platform:      win32
+[debug] [2026-04-10T13:54:41.491Z] Node Version:  v24.14.1
+[debug] [2026-04-10T13:54:41.491Z] Time:          Fri Apr 10 2026 19:24:41 GMT+0530 (India Standard Time)
+[debug] [2026-04-10T13:54:41.492Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-10T13:54:42.092Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-10T13:54:42.094Z] > authorizing via signed-in user (mmpptt9@gmail.com)
+[debug] [2026-04-10T13:54:42.100Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:42.101Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:42.103Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live [none]
+[debug] [2026-04-10T13:54:43.325Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live 200
+[debug] [2026-04-10T13:54:43.325Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spy-glass-house/channels/live {"name":"projects/23532303547/sites/spy-glass-house/channels/live","url":"https://spy-glass-house.web.app","release":{"name":"projects/23532303547/sites/spy-glass-house/channels/live/releases/1775829270415000","version":{"name":"projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:54:25.860198Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T13:54:29.918555Z","finalizeUser":{"email":"mmpptt9@gmail.com"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:54:30.415Z","releaseUser":{"email":"mmpptt9@gmail.com"}},"createTime":"2026-04-08T14:03:42.425388302Z","updateTime":"2026-04-10T13:54:30.415Z","retainedReleaseCount":2147483647}
+[debug] [2026-04-10T13:54:43.326Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:43.326Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:43.327Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live [none]
+[debug] [2026-04-10T13:54:44.062Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live 200
+[debug] [2026-04-10T13:54:44.063Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live","url":"https://spyglasshouse-store.web.app","release":{"name":"projects/23532303547/sites/spyglasshouse-store/channels/live/releases/1775827180634000","version":{"name":"projects/23532303547/sites/spyglasshouse-store/versions/9aebd3d631ac5f63","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:19:39.656828Z","createUser":{"email":"mmpptt9@gmail.com"},"finalizeTime":"2026-04-10T13:19:40.068039Z","finalizeUser":{"email":"mmpptt9@gmail.com"},"fileCount":"18","versionBytes":"24257"},"type":"DEPLOY","releaseTime":"2026-04-10T13:19:40.634Z","releaseUser":{"email":"mmpptt9@gmail.com"}},"createTime":"2026-04-10T12:04:06.995593588Z","updateTime":"2026-04-10T13:19:40.634Z","retainedReleaseCount":999999}
+[debug] [2026-04-10T13:54:44.069Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:44.069Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:44.070Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone [none]
+[debug] [2026-04-10T13:54:44.070Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"sourceVersion":"projects/23532303547/sites/spy-glass-house/versions/3ad85fb35d8e22b8","finalize":true}
+[debug] [2026-04-10T13:54:45.109Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone 200
+[debug] [2026-04-10T13:54:45.109Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/versions:clone {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM"}
+[debug] [2026-04-10T13:54:45.112Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:45.112Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:45.113Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM [none]
+[debug] [2026-04-10T13:54:45.547Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM 200
+[debug] [2026-04-10T13:54:45.547Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM"}
+[debug] [2026-04-10T13:54:46.050Z] [LRO Poller] Retrying task index 0
+[debug] [2026-04-10T13:54:46.051Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:46.051Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:46.052Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM [none]
+[debug] [2026-04-10T13:54:46.433Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM 200
+[debug] [2026-04-10T13:54:46.433Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM {"name":"projects/23532303547/operations/CjNzaXRlcy9zcHlnbGFzc2hvdXNlLXN0b3JlL3ZlcnNpb25zLzk5ODYwMzMzODAzY2I1NmM","done":true,"response":{"@type":"type.googleapis.com/google.firebase.hosting.v1beta1.Version","name":"sites/spyglasshouse-store/versions/99860333803cb56c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"}}}
+[debug] [2026-04-10T13:54:46.434Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:46.434Z] Checked if tokens are valid: true, expires at: 1775830755300
+[debug] [2026-04-10T13:54:46.435Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases versionName=sites%2Fspyglasshouse-store%2Fversions%2F99860333803cb56c
+[debug] [2026-04-10T13:54:47.223Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases 200
+[debug] [2026-04-10T13:54:47.223Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/spyglasshouse-store/channels/live/releases {"name":"projects/23532303547/sites/spyglasshouse-store/channels/live/releases/1775829286786000","version":{"name":"projects/23532303547/sites/spyglasshouse-store/versions/99860333803cb56c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-04-10T13:54:44.912774Z","createUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"},"finalizeTime":"2026-04-10T13:54:46.138155Z","finalizeUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}},"type":"DEPLOY","releaseTime":"2026-04-10T13:54:46.786Z","releaseUser":{"email":"mmpptt9@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocINOwlp5pVnXCF-vf6YTSjMhl_QxpMLNQCgzjF4cvgiv8xsM1ytQA"}}
+[info] +  Site spy-glass-house channel live has been cloned to site spyglasshouse-store channel live. 
+[info] +  Channel URL (live): https://spyglasshouse-store.web.app 

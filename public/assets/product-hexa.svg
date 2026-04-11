@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Hexa Decor Mirror Set">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2e30"/>
+      <stop offset="100%" stop-color="#0e1718"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <polygon points="330,270 430,210 530,270 530,390 430,450 330,390" fill="none" stroke="#d1b271" stroke-width="10"/>
+  <polygon points="550,240 650,180 750,240 750,360 650,420 550,360" fill="none" stroke="#d1b271" stroke-width="10"/>
+  <polygon points="770,270 870,210 970,270 970,390 870,450 770,390" fill="none" stroke="#d1b271" stroke-width="10"/>
+  <text x="600" y="824" fill="#e8dbbf" text-anchor="middle" font-size="44" font-family="Georgia, serif" letter-spacing="4">HEXA DECOR MIRROR SET</text>
+</svg>

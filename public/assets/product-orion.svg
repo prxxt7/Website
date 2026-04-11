@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Orion Wall Lighting Pair">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2b283e"/>
+      <stop offset="100%" stop-color="#121025"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect x="350" y="260" width="160" height="280" rx="20" fill="#d1b271" fill-opacity="0.28" stroke="#d1b271" stroke-width="8"/>
+  <rect x="690" y="260" width="160" height="280" rx="20" fill="#d1b271" fill-opacity="0.28" stroke="#d1b271" stroke-width="8"/>
+  <circle cx="430" cy="400" r="120" fill="#f1d186" fill-opacity="0.16"/>
+  <circle cx="770" cy="400" r="120" fill="#f1d186" fill-opacity="0.16"/>
+  <text x="600" y="824" fill="#efe2c5" text-anchor="middle" font-size="44" font-family="Georgia, serif" letter-spacing="4">ORION WALL LIGHTING PAIR</text>
+</svg>
