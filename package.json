@@ -4,6 +4,7 @@
   "description": "SPY GLASS HOUSE storefront + admin with MySQL backend",
   "type": "module",
   "scripts": {
+    "build": "echo 'No build step required'",
     "start": "node server/index.js",
     "dev": "node --watch server/index.js"
   },
