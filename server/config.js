@@ -24,6 +24,7 @@ export const config = {
   dbUser: process.env.DB_USER || "spy_app",
   dbPassword: process.env.DB_PASSWORD || "",
   dbName: process.env.DB_NAME || "spy_glass_house",
+  dbSsl: process.env.DB_SSL !== "false",
   adminEmails: asList(process.env.ADMIN_EMAILS).map((item) => item.toLowerCase()),
   adminLoginEmail: String(process.env.ADMIN_LOGIN_EMAIL || "").toLowerCase(),
   adminLoginPassword: String(process.env.ADMIN_LOGIN_PASSWORD || ""),

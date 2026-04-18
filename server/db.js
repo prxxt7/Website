@@ -9,7 +9,8 @@ export const pool = mysql.createPool({
   database: config.dbName,
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0
+  queueLimit: 0,
+  ssl: config.dbSsl !== false ? { rejectUnauthorized: true } : false
 });
 
 export async function query(sql, params = []) {

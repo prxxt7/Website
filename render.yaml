@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: spy-glass-house
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: DB_HOST
+        fromDatabase:
+          name: spy-glass-house-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: spy-glass-house-db
+          property: port
+      - key: DB_USER
+        fromDatabase:
+          name: spy-glass-house-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: spy-glass-house-db
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: spy-glass-house-db
+          property: database
+      - key: DB_SSL
+        value: true
+      - key: ADMIN_EMAILS
+        sync: false
+      - key: ADMIN_LOGIN_EMAIL
+        sync: false
+      - key: ADMIN_LOGIN_PASSWORD
+        sync: false
+      - key: FIREBASE_WEB_API_KEY
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        sync: false
+databases:
+  - name: spy-glass-house-db
+    databaseName: spy_glass_house
+    plan: free
