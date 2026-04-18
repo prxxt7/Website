@@ -714,7 +714,20 @@ app.use((error, _req, res, _next) => {
 });
 
 async function start() {
-  await query("SELECT 1 AS up");
+  try {
+    console.log("Connecting to database...");
+    console.log("DB Host:", config.dbHost);
+    console.log("DB Port:", config.dbPort);
+    console.log("DB Name:", config.dbName);
+    console.log("DB SSL:", config.dbSsl);
+    await query("SELECT 1 AS db_check");
+    console.log("Database connected successfully!");
+  } catch (dbError) {
+    console.error("Database connection failed:", dbError.message);
+    console.error("Full error:", JSON.stringify(dbError));
+    throw dbError;
+  }
+
   app.listen(config.port, () => {
     console.log(`SPY GLASS HOUSE API running on http://localhost:${config.port}`);
   });
