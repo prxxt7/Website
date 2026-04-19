@@ -55,6 +55,15 @@ const authReady = new Promise((resolve) => {
   resolveAuthReady = resolve;
 });
 
+function markAuthReady() {
+  if (!state.authReady) {
+    state.authReady = true;
+    if (typeof resolveAuthReady === "function") {
+      resolveAuthReady();
+    }
+  }
+}
+
 function apiUrl(path) {
   return `${apiBase}${path}`;
 }
@@ -607,53 +616,59 @@ function bindEvents() {
 function setupCustomerAuth() {
   if (!hasFirebaseConfig) {
     syncAuthUi();
-    state.authReady = true;
-    resolveAuthReady();
+    markAuthReady();
     return;
   }
 
-  const app = initializeApp(firebaseConfig);
-  auth = getAuth(app);
-  googleProvider = new GoogleAuthProvider();
+  try {
+    const app = initializeApp(firebaseConfig);
+    auth = getAuth(app);
+    googleProvider = new GoogleAuthProvider();
 
-  onAuthStateChanged(auth, async (user) => {
-    const hadCustomer = Boolean(state.customer);
+    onAuthStateChanged(auth, async (user) => {
+      const hadCustomer = Boolean(state.customer);
 
-    if (user) {
-      const token = await getCustomerToken();
-      state.idToken = token || "";
-      state.customer = {
-        uid: String(user.uid || "").trim(),
-        name: String(user.displayName || "").trim(),
-        email: String(user.email || "")
-          .trim()
-          .toLowerCase(),
-        phone: String(user.phoneNumber || "").trim()
-      };
-    } else {
-      state.customer = null;
-      state.idToken = "";
-    }
+      if (user) {
+        const token = await getCustomerToken();
+        state.idToken = token || "";
+        state.customer = {
+          uid: String(user.uid || "").trim(),
+          name: String(user.displayName || "").trim(),
+          email: String(user.email || "")
+            .trim()
+            .toLowerCase(),
+          phone: String(user.phoneNumber || "").trim()
+        };
+      } else {
+        state.customer = null;
+        state.idToken = "";
+      }
 
+      syncAuthUi();
+
+      if (!state.authReady) {
+        markAuthReady();
+      } else if (!hadCustomer && state.customer) {
+        void logVisit("login");
+      } else if (hadCustomer && !state.customer) {
+        void logVisit("logout");
+      }
+    });
+  } catch (_error) {
+    auth = null;
+    googleProvider = null;
     syncAuthUi();
-
-    if (!state.authReady) {
-      state.authReady = true;
-      resolveAuthReady();
-    } else if (!hadCustomer && state.customer) {
-      void logVisit("login");
-    } else if (hadCustomer && !state.customer) {
-      void logVisit("logout");
-    }
-  });
+    markAuthReady();
+  }
 }
 
 async function init() {
   setupCustomerAuth();
   renderFilters();
   renderProducts();
+  reveal();
   bindEvents();
-  await authReady;
+  await Promise.race([authReady, new Promise((resolve) => setTimeout(resolve, 1500))]);
   await loadProducts();
   if (!state.loggedPageView) {
     state.loggedPageView = true;
