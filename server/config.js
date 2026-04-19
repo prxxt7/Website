@@ -17,6 +17,12 @@ function asList(input) {
     .filter(Boolean);
 }
 
+const defaultCorsOrigins = [
+  "https://spy-glass-house.onrender.com",
+  "https://spy-glass-house.web.app",
+  "https://spy-glass-house.firebaseapp.com"
+];
+
 export const config = {
   port: asNumber(process.env.PORT, 8080),
   dbHost: process.env.DB_HOST || "127.0.0.1",
@@ -31,5 +37,5 @@ export const config = {
   adminLoginPassword: String(process.env.ADMIN_LOGIN_PASSWORD || ""),
   firebaseWebApiKey: String(process.env.FIREBASE_WEB_API_KEY || ""),
   jwtSecret: String(process.env.JWT_SECRET || "change-me-now"),
-  corsOrigins: asList(process.env.CORS_ORIGIN)
+  corsOrigins: Array.from(new Set([...defaultCorsOrigins, ...asList(process.env.CORS_ORIGIN)]))
 };

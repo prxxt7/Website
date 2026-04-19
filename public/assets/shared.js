@@ -6,7 +6,7 @@ export const STARTER_PRODUCTS = [
     price: 6499,
     badge: "Best Seller",
     description: "Elegant arch mirror with premium polish and balanced frame profile.",
-    image: "/assets/product-aurora.svg",
+    image: "/assets/IMG_5337.PNG",
     isActive: true
   },
   {
