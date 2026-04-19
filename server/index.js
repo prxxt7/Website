@@ -1,8 +1,10 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import cors from "cors";
 import express from "express";
 import { createAdminToken, optionalCustomer, requireAdmin, requireCustomer } from "./auth.js";
 import { config } from "./config.js";
-import { pool, query } from "./db.js";
+import { pingDatabase, pool, query } from "./db.js";
 import { STARTER_PRODUCTS } from "./starter-products.js";
 import {
   asBoolean,
@@ -16,6 +18,8 @@ import {
 } from "./utils.js";
 
 const app = express();
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const publicDir = path.resolve(currentDir, "../public");
 
 const allowedOrigins = new Set(config.corsOrigins);
 function isLocalDevOrigin(origin) {
@@ -53,6 +57,7 @@ app.use(
 
 app.use(express.json({ limit: "1mb" }));
 app.disable("x-powered-by");
+app.use(express.static(publicDir));
 
 function wrap(handler) {
   return (req, res, next) => {
@@ -189,8 +194,18 @@ async function upsertCustomerUser(customer) {
 app.get(
   "/api/health",
   wrap(async (_req, res) => {
-    await query("SELECT 1 AS ok");
-    res.json({ ok: true, project: "SPY GLASS HOUSE", db: config.dbName });
+    try {
+      await pingDatabase();
+      res.json({ ok: true, project: "SPY GLASS HOUSE", db: config.dbName, databaseOk: true });
+    } catch (error) {
+      res.status(503).json({
+        ok: false,
+        project: "SPY GLASS HOUSE",
+        db: config.dbName,
+        databaseOk: false,
+        error: error.message || "Database unavailable."
+      });
+    }
   })
 );
 
@@ -700,8 +715,12 @@ app.post(
   })
 );
 
-app.use((_req, res) => {
+app.use("/api", (_req, res) => {
   res.status(404).json({ error: "API route not found." });
+});
+
+app.use((_req, res) => {
+  res.status(404).sendFile(path.join(publicDir, "index.html"));
 });
 
 app.use((error, _req, res, _next) => {
@@ -714,23 +733,24 @@ app.use((error, _req, res, _next) => {
 });
 
 async function start() {
+  app.listen(config.port, () => {
+    console.log(`SPY GLASS HOUSE API running on http://localhost:${config.port}`);
+  });
+
   try {
     console.log("Connecting to database...");
     console.log("DB Host:", config.dbHost);
     console.log("DB Port:", config.dbPort);
     console.log("DB Name:", config.dbName);
     console.log("DB SSL:", config.dbSsl);
-    await query("SELECT 1 AS db_check");
+    console.log("DB Timeout (ms):", config.dbConnectTimeoutMs);
+    await pingDatabase();
     console.log("Database connected successfully!");
   } catch (dbError) {
     console.error("Database connection failed:", dbError.message);
     console.error("Full error:", JSON.stringify(dbError));
-    throw dbError;
+    console.error("Server is running, but database-backed routes will fail until the connection is fixed.");
   }
-
-  app.listen(config.port, () => {
-    console.log(`SPY GLASS HOUSE API running on http://localhost:${config.port}`);
-  });
 }
 
 start().catch((error) => {
